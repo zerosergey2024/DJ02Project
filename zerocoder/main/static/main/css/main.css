@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Светло-серый фон */
+    color: #333;
+}
+
+/* Стили для боковой панели (aside) */
+aside {
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+aside h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff; /* Цвет заголовка */
+}
+
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #007bff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+aside ul li a:hover,
+aside ul li a.active {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+
+/* Стили для основного контента */
+main {
+    background-color: #ffffff; /* Белый фон */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Дополнительные стили для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Стили для ссылок */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    aside {
+        margin-bottom: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
