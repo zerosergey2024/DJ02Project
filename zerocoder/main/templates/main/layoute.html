@@ -6,19 +6,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ {% load static %}
  <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <!-- Включаем меню -->
-    {% include 'main/menu.html' %}
-
-    <!-- Основной контейнер -->
+     <!-- Основной контейнер -->
     <div class="container-fluid">
         <div class="row">
             <!-- Боковая панель -->
             <aside class="col-md-3 col-lg-2 bg-light p-3 border-end">
                 <div class="text-center mb-4">
+
+                {% load static %}
                     <img src="{% static 'main/img/Космос1.jpeg' %}" alt="Далекие планеты" class="img-fluid rounded-circle" width="150">
                     <h5 class="mt-3">Land Unveiled</h5>
                 </div>
@@ -41,14 +41,7 @@
             <!-- Основной контент -->
             <main class="col-md-9 col-lg-10 p-4">
                 {% block content %}
-                <p>Загадочный и бесконечный, космос манит своим величием и тайнами.
-                    Миллиарды звезд, разбросанных по галактикам, формируют картины,
-                    которые мы лишь начинаем понимать. Темные материи, черные дыры,
-                    экзопланеты — всё это поражает наше воображение. Каждая звезда,
-                    светящаяся в ночи, напоминает нам о том, насколько огромен и неизведан наш мир.
-                    Космос — это не просто пустота, это место, где рождаются звезды, галактики и,
-                    возможно, новые формы жизни. Он зовет нас исследовать и понимать,
-                    кто мы в этом бесконечном пространстве.</p>
+
                 {% endblock %}
             </main>
         </div>
