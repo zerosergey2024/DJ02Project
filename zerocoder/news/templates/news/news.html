@@ -1,0 +1,20 @@
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+	<title>Новостная страница</title>
+{% endblock %}
+
+{% block content %}
+<h1>Новостная страница</h1>
+
+{% for new in news %}
+	<div>
+		<h3>{{ new.title }}</h3> <!-- Заголовок новости -->
+		<p><strong>Автор:</strong> {{ 'Профессор Погодин' }}</p> <!-- Автор новости -->
+		<p>{{ new.short_description }}</p> <!-- Краткое описание новости -->
+		<p>{{ new.text }}</p> <!-- Полный текст новости -->
+	</div>
+	<hr> <!-- Разделительная линия между новостями -->
+{% endfor %}
+
+{% endblock %}
